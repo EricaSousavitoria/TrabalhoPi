@@ -1,0 +1,45 @@
+<!-- Formulário para uma página de login para o sistema de RH-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> REDE BOM PETRO </title>
+    
+    <!-- FONTE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bungee+Shade&family=Sofia&family=Young+Serif&display=swap" rel="stylesheet">
+
+    <!-- Icone Posto -->
+    <link rel="icon" href="images/posto-de-gasolina.png" type="image/png" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/login.css"/>
+
+</head>
+<body>
+    <div class="inicio">
+            <img src="images/controleInterno.png"/>
+    </div>
+    <div class="inicio">
+            <h5> Controle  Interno </h5>
+    </div>   
+    <form>
+        <fieldset>
+
+            <label for="email"> E-mail </label>
+            <input class="campologin" type="email" name="email" id="email" autofocus placeholder="Digite seu e-mail" title="Informe o e-mail de cadastro"/>
+
+            <label for="senha"> Senha </label>
+            <input class="campologin" type="password" name="senha" id="senha" required placeholder="Digite sua senha" title="Digite sua senha" maxlength="10"/>
+        </fieldset>
+
+        <input type="submit" class="botao" value="LOGIN" id="login" onclick="validaLogin(event)"/> 
+        <input type="reset" class="botao" value="LIMPAR" id="limpar"/>
+
+    </form>
+    <script src="js/login.js"></script>
+</body>
+</html>

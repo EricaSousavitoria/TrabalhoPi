@@ -1,0 +1,144 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bungee+Shade&family=Rubik+Mono+One&family=Sofia&family=Ubuntu&family=Young+Serif&display=swap');
+
+
+h1{
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    padding-top: 5px;
+}
+
+body{
+    background: linear-gradient(to bottom, #DBEFE1, #8ec59eea);
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+header {
+    background: linear-gradient(to bottom, #9be2f9,#e6f6fc); 
+    color: #fff;
+    padding: 10px 0; 
+    display: flex;
+    min-height: 450px;
+    min-width: 450px;
+    
+}
+
+img{
+    width: 100px;
+}
+
+
+.container{
+    display: flex;
+}
+
+.cadastro {
+    margin: 0 auto;
+    margin-top: 20px; 
+    padding: 20px;
+    margin-left: 1%;
+    background-color: #fff; 
+    border-radius: 15px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    min-height: 550px;
+    min-width: 550px;
+   
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px; 
+    margin-bottom: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 3px; 
+}
+
+input[type = "number"]{
+    width: 100%;
+    padding: 10px; 
+    margin-bottom: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 3px; 
+
+}
+
+
+input {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
+    border: 1px solid #007bff; 
+    outline: none; 
+}
+
+.combobox {
+    width: 100%;
+    padding: 10px; 
+    margin-bottom: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 3px; 
+}
+
+input[type="date"] {
+    width: 100%;
+    padding: 10px; 
+    margin-bottom: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 3px; 
+}
+
+
+#salvar{
+    background: green; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 16px; 
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+#salvar:hover{
+    color: black;
+    background: #69e231;
+   }  
+#limpar{ 
+    background: red; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 16px; 
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    
+}
+#limpar:hover{
+    background:  #e93a51; 
+}
+
+table {
+    width: 100%;
+    margin-top: 15px; 
+    
+}
+
+table, th, td {
+    border: 1px solid #ccc; 
+}
+
+th, td {
+    padding: 8px; 
+    text-align: center;
+}
+
+th {
+    background: linear-gradient(to bottom, #347c0a,#215526); 
+    color: #fff; 
+}

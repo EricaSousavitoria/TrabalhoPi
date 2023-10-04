@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciamento de Clientes</title>
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Ícones Bootstrap. Para consultar os ícones: https://icons.getbootstrap.com -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Icone Posto -->
+  <link rel="icon" href="images/posto-de-gasolina.png" type="image/png" />
+
+  <link rel="stylesheet" href="css/cadastro.css" />
+</head>
+
+<body>
+  <!-- MENU -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-black">
+    <div class="container-fluid m-3">
+      <!-- Nome da empresa -->
+      <a class="navbar-brand text-light" href="index.html"> REDE BOM PETRO </a>
+      <!-- itens do menu -->
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="index.html">
+              <i class="bi bi-house-lock-fill"></i> Início
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="cadastro.html">
+              <i class="bi bi-person-bounding-box"></i> Funcionários
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Inicio do Formulário de cadastro-->
+  <div class="container">
+    <div class="cadastro">
+      <h1><img src="images/carteira-de-identidade.png">Cadastro do Funcionários</h1> <br>
+      <form id="registroForm">
+
+        <!-- Código do funcionário (e-social)-->
+        <label for="e-social">E-SOCIAL</label>
+        <input type="number" id="esocial" name="esocial" title="Informar o código do e-social" placeholder="0000">
+        <br>
+        <!-- Nome do Funcionário-->
+        <label for="nome">Nome do Funcionário:</label>
+        <input type="text" id="nome" name="nome" required title="Nome completo do Funcionário" placeholder="Ex.: Érica Vitória Sousa">
+          
+        <!-- Cargo do funcionário -->
+        <label for="cargo">Cargo do Funcionário:</label><br>
+        <select id="cargo" name="cargo" class="combobox" required>
+          <option value="" disabled selected>Selecione...</option>
+          <option value="frentista">Frentista</option>
+          <option value="caixa">Frentista Caixa</option>
+          <option value="gerente">Gerente</option>
+          <option value="adm">Auxiliar Administrativo</option>
+        </select>
+        <br>
+
+        <!-- Data de nascimento-->
+        <label for="data">Data de Nascimento:</label><br>
+        <input type="date" id="data" name="data" required>
+        <br>
+
+        <!-- Sexo -->
+        <label for="sexo">Sexo:</label>
+        <br>
+        <input type="radio" id="radioFem" name="radio" value="Feminino" required checked>
+        <label for="radioSexof">Feminino</label>
+        <input type="radio" id="radioMasc" name="radio" value="Masculino" required>
+        <label for="radioSexom">Masculino</label>
+
+        <br><br>
+        <!-- ASOS Finalizados -->
+        <input type="checkbox" id="checkbox" name="checkbox">
+        <label for="checkbox">ASO ADMISSIONAL</label>
+        <br>
+        <input type="checkbox" id="checkbox" name="checkbox">
+        <label for="checkbox">ASO DEMISSIONAL</label>
+        <br><br>
+        <!--Botões de Salvar e limpar do Form de cadastro-->
+        <div class="botoes">
+          <input type="submit" value="✅ CADASTRAR" id="salvar" onclick="validaLogin(event)" class="botao" />
+          <!--botão de login para entrar na pagina-->
+          <input type="reset" value="✖️ LIMPAR" id="limpar" class="botao" />
+          <!--botão para limpar todos os campos de maneira mais rápida, facilitando assim o cadastro mas pratico -->
+        </div>
+
+      </form>
+    </div>
+
+ <!-- Listagem de Funcionários -->
+ <div class="cadastro">
+  <section class="registros">
+      <h1> <img src="images/rede.png" width="58"> Lista de Funcionários </h1> 
+         <table id="registrosTable">
+          <thead>
+              <tr>
+                  <th>E-SOCIAL</th>
+                  <th>NOME COMPLETO</th>
+                  <th>CARGO</th>
+                  <th>DATA DE NASCIMENTO</th>
+                  <th>SEXO</th>
+              </tr>
+          </thead>
+          <tbody>
+              
+          </tbody>
+      </table>
+  </section>
+</div>
+</div>
+ <!-- Rodapé -->
+ <footer class="footer mt-auto p-4 bg-black">
+  <div class="container text-center">
+      <span  class="text-light text-center"> Fatec Itu - Todos os direitos reservados
+      </span>
+  </div>
+</footer>
+</body>
+<footer>
+</footer>
+<script src="js/cadastro.js"></script>
+</html>
