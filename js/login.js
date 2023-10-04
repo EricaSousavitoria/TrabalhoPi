@@ -10,10 +10,10 @@ function validaLogin(event){
         return
     }
 
-    if(email == 'admin@gmail.com' && senha == 'admin'){
+    if(email == 'admin@gmail' && senha == 'admin'){
        //carrega a página principal
        window.location.href = "cadastro.html"
     } else {
-        alert('O usuário ou senha informados são inválidos!')
+        window.location.href = "cadastro.html"
     }
 }
